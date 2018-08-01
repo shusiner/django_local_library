@@ -132,7 +132,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Author
 
-class AuthorCreate(CreateView):
+class AuthorCreate(PermissionRequiredMixin,CreateView):
     model = Author
     fields = '__all__'
     initial={'date_of_death':'05/01/2018',}
