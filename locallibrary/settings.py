@@ -20,16 +20,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wiw3p^ujh%pw5q39-qtbfcx)g-=e^)q@gto0arsr1y*z%2$f10'
+SECRET_KEY = 'wiw3p^ujh%pw5q39-qtbfcx(g-=e^)q@gto0arsr1y*z%2$f10'
 
 import os
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'wiw3p^ujh%pw5q39-qtbfcx)g-=e^)q@gto0arsr1y*z%2$f10')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'wiw3p^ujh%pw5q39-qtbfcx(g-=e^)q@gto0arsr1y*z%2$f10')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://serene-island-78286.herokuapp.com/', 'http://127.0.0.1']
 
 
 # Application definition
