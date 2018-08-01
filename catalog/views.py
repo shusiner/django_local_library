@@ -132,7 +132,6 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Author
 
-@permission_required('catalog.can_mark_returned')
 class AuthorCreate(CreateView):
     model = Author
     fields = '__all__'
