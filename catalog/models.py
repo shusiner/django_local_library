@@ -111,7 +111,7 @@ class Author(models.Model):
         """Returns the url to update a particular author instance."""
         return reverse('author_update', args=[str(self.id)])
 
-    def delete(self):
+    def delete1(self):
         """Returns the url to delete a particular author instance."""
         return reverse('author_delete', args=[str(self.id)])
 
